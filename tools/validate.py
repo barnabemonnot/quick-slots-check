@@ -89,10 +89,6 @@ def note_rules(data):
         for key in ("impact_axes", "reach_measure"):
             if not data.get(key):
                 errors.append(f"$.{key}: required for impact {data['impact']} (RATING.md section 6)")
-    if data.get("disclosure") == "class-level":
-        for key in ("addresses", "repos"):
-            if data.get(key):
-                errors.append(f"$.{key}: must be empty while disclosure is class-level")
     cid = data.get("id", "")
     if data.get("class") and cid and not cid.startswith(data["class"] + "-"):
         errors.append("$.id: must start with the class ID")

@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Report an affected live system (private)
+  - name: Report an affected live system privately
     url: https://github.com/OWNER-PENDING/REPO-PENDING/security/advisories/new
-    about: Anything that names a team, project, protocol, client, chain, person or address goes here, never in a public issue. See SECURITY.md.
+    about: Use this if you would rather the owner hears first. A public note is also fine; see notes/README.md and SECURITY.md.

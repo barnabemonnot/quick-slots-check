@@ -1,5 +1,5 @@
 ---
-title: A MEDIUM note without rubric axes and with a repo while class-level
+title: A MEDIUM note without rubric axes
 id: OFF4-001
 layer: offchain
 chain: n/a
@@ -17,7 +17,6 @@ timing: before the fork
 status: open
 evidence: CHECKED
 reproduction: none
-disclosure: class-level
 ---
 
-Synthetic negative example: must fail (repos while class-level; no impact_axes or reach_measure for MEDIUM).
+Synthetic negative example: must fail (no impact_axes or reach_measure for MEDIUM).

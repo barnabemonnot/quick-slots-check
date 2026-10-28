@@ -2,7 +2,7 @@
 
 EIP-8198 (Quick Slots) would shorten Ethereum slots from 12 s to 10 s. It is a candidate for the Hegotá fork
 (Heze on the consensus layer, Bogota on the execution layer). It is **not scheduled**. This summary describes classes,
-mechanisms and counts. It names no team or system.
+mechanisms and counts. Notes on specific systems go in [notes/](notes/README.md).
 
 Evidence labels: **CHECKED** = code read, chain read, test or local devnet run; **INFERRED** = derived from CHECKED
 facts; **UNVERIFIED** = not checked. No system has run on a real 10 s network, so every post-fork behaviour below is

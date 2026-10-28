@@ -11,8 +11,7 @@
 
 ## Rules
 
-- [ ] Names no team, project, product, protocol, client implementation, chain other than Ethereum, company, person or
-      contract address. (Named systems go to a private advisory: SECURITY.md.)
+- [ ] A named system is bound to a pinned block or release, and the text is factual (mechanism, evidence, fix).
 - [ ] No exploit write-up or attack strategy.
 - [ ] No transaction or state change on a live network was needed for this change.
 - [ ] Fixtures are synthetic; no code copied from other projects.
@@ -23,4 +22,3 @@
 - [ ] `cd vectors && python3 -B check.py --examples --self-test`
 - [ ] `python3 tools/validate.py` and `--self-test`
 - [ ] `python3 tools/hygiene.py`
-- [ ] `python3 tools/names_check.py`

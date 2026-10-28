@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Hygiene check: no machine-local paths, keys, addresses or compiled files in the repository.
+"""Hygiene check: no machine-local paths, keys or compiled files in the repository.
 
   python3 tools/hygiene.py            # check every file under the repository root
   python3 tools/hygiene.py PATH ...   # check given files or folders
 
 A line that must contain a matching string (for example a rule in this file) carries the marker `hygiene: allow`.
-Addresses are checked by tools/names_check.py (run it without a denylist for the address check alone).
+Addresses are allowed: notes name the systems they are about.
 Exit 0 = clean; 1 = at least one hit.
 """
 import re

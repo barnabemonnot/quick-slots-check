@@ -23,7 +23,6 @@ evidence: INFERRED
 reproduction: none
 impact_axes: I2 T3 R2 recovery=owner
 reach_measure: synthetic example, no measurement
-disclosure: class-level
 ---
 
 Synthetic example for tools/validate.py --self-test. It describes no real system.

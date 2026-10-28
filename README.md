@@ -14,10 +14,8 @@ slot and time with one fixed duration. This repository helps you check your own 
 
 Start with [SUMMARY.md](SUMMARY.md). If you use a coding agent, point it at [AGENTS.md](AGENTS.md).
 
-Found an affected live system? Do not open a public issue. Use a private security advisory: see
-[SECURITY.md](SECURITY.md).
+Found an affected live system? Write a note ([notes/](notes/README.md)), or report it privately first if you prefer
+([SECURITY.md](SECURITY.md)). Evidence carries a label: CHECKED, INFERRED or UNVERIFIED.
 
-Everything here names classes and counts, not teams or systems. Evidence carries a label: CHECKED, INFERRED or
-UNVERIFIED.
-
-Status: early skeleton. Publication date, hosting organization and licenses are pending decision.
+Maintainer: Barnabé Monnot (@barnabemonnot). Status: early skeleton. Publication date, hosting organization and
+licenses are pending his decision.

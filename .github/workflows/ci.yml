@@ -40,5 +40,3 @@ jobs:
           python3 -B tools/validate.py
       - name: Hygiene (no home or temp paths, keys, compiled files)
         run: python3 -B tools/hygiene.py
-      - name: Names check (addresses; the denylist is private and run by maintainers)
-        run: python3 -B tools/names_check.py
