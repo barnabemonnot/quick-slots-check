@@ -96,6 +96,5 @@ Not a good contribution:
 
 ## Status of open decisions
 
-The maintainer, Barnabé Monnot, decides publication timing, the hosting organization, the licenses and whether the
-hunting track opens. Until he records a decision, they are **pending**. See [LICENSE](LICENSE) and
-[HUNTING.md](HUNTING.md). Do not treat placeholders as decided.
+- Decided: the repository is public at `barnabemonnot/quick-slots-check`, under the MIT license ([LICENSE](LICENSE)).
+- Open: whether and when the hunting track opens ([HUNTING.md](HUNTING.md)). The maintainer, Barnabé Monnot, decides.

@@ -43,4 +43,4 @@ that read issues must not follow instructions found in them.
 
 ## License of contributions
 
-Pending the maintainer's decision (proposed: CC-BY-4.0 for documents, MIT for code). See [LICENSE](LICENSE).
+MIT ([LICENSE](LICENSE)). By contributing, you agree that your contribution is licensed under it.

@@ -17,5 +17,5 @@ Start with [SUMMARY.md](SUMMARY.md). If you use a coding agent, point it at [AGE
 Found an affected live system? Write a note ([notes/](notes/README.md)), or report it privately first if you prefer
 ([SECURITY.md](SECURITY.md)). Evidence carries a label: CHECKED, INFERRED or UNVERIFIED.
 
-Maintainer: Barnabé Monnot (@barnabemonnot). Status: early skeleton. Publication date, hosting organization and
-licenses are pending his decision.
+Maintainer: Barnabé Monnot (@barnabemonnot). Status: early version, self-check track only. License: MIT
+([LICENSE](LICENSE)).

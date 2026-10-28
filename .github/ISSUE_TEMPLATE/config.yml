@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Report an affected live system privately
-    url: https://github.com/OWNER-PENDING/REPO-PENDING/security/advisories/new
+    url: https://github.com/barnabemonnot/quick-slots-check/security/advisories/new
     about: Use this if you would rather the owner hears first. A public note is also fine; see notes/README.md and SECURITY.md.
