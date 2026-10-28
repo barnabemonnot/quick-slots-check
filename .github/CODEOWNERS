@@ -1,0 +1,7 @@
+# Placeholder owner: replace @OWNER-PENDING with the maintainers' team once the hosting organization is decided.
+# These files tell agents and reporters what to do, so changes need a maintainer review.
+/AGENTS.md      @OWNER-PENDING
+/RATING.md      @OWNER-PENDING
+/SECURITY.md    @OWNER-PENDING
+/HUNTING.md     @OWNER-PENDING
+/.github/       @OWNER-PENDING

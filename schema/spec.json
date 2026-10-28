@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "schema/spec.json",
+  "title": "Front matter of a spec-gap file in spec/",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "priority", "decides", "latest_decision", "depends_on"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^R([1-9]|1[0-7])$"},
+    "title": {"type": "string", "minLength": 3},
+    "priority": {"enum": ["P1", "P2", "P3"]},
+    "decides": {"type": "string"},
+    "latest_decision": {"type": "string"},
+    "depends_on": {"type": "array", "items": {"type": "string", "pattern": "^(R([1-9]|1[0-7])|EIP-[0-9]+)$"}}
+  }
+}

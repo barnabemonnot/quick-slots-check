@@ -1,0 +1,44 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Vector tests (reference, contract, wrong-fix fingerprints, preset extension)
+        working-directory: vectors
+        run: |
+          python3 -B check.py --examples --self-test
+          python3 -B minimal.py
+          for trap in constant_12 constant_10 virtual_genesis; do
+            if python3 -B check.py traps.py:$trap; then echo "$trap should fail"; exit 1; fi
+          done
+      - name: Vectors are reproducible
+        run: |
+          cp vectors/vectors.json /tmp/vectors.before.json
+          python3 -B vectors/generate.py
+          cmp vectors/vectors.json /tmp/vectors.before.json
+      - name: Scanner self-test
+        run: python3 -B check/scan.py --self-test
+      - name: Schema validation
+        run: |
+          python3 -B tools/validate.py --self-test
+          python3 -B tools/validate.py
+      - name: Hygiene (no home or temp paths, keys, compiled files)
+        run: python3 -B tools/hygiene.py
+      - name: Names check (addresses; the denylist is private and run by maintainers)
+        run: python3 -B tools/names_check.py

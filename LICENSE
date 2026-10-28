@@ -1,0 +1,10 @@
+LICENSE: PENDING DECISION
+
+The license of this repository has not been decided.
+
+Proposed:
+  - Documentation (*.md, schema descriptions): CC-BY-4.0
+  - Code (*.py, workflows, fixtures): MIT
+
+Until a decision is recorded here, no license is granted. Do not publish this repository before this file is
+replaced with the chosen license texts.

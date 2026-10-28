@@ -1,0 +1,24 @@
+{
+  "revision": "21507bf979398c2e1d2d9fc2c6b49a1dee859a71",
+  "parameters": {
+    "SLOTS_PER_EPOCH": 8,
+    "SLOT_DURATION_MS": 6000,
+    "SLOT_DURATION_MS_HEZE": 5000
+  },
+  "sources": {
+    "config": {
+      "url": "https://github.com/ethereum/consensus-specs/blob/21507bf979398c2e1d2d9fc2c6b49a1dee859a71/configs/minimal.yaml",
+      "sha256": "6179201b1d7cfa2844c3cd363e8cf2cb4ef5a35b47ac1e3b8b7dc495d39f050e"
+    },
+    "preset": {
+      "url": "https://github.com/ethereum/consensus-specs/blob/21507bf979398c2e1d2d9fc2c6b49a1dee859a71/presets/minimal/phase0.yaml",
+      "sha256": "e5adcabf45a9c7d5cbaecd42893dcaff7ada826f3e55c176bccc5aa7418710cc"
+    }
+  },
+  "synthetic": [
+    "genesis_time=0",
+    "Heze epoch5",
+    "later4-second era at epoch7",
+    "epoch0 activation control"
+  ]
+}

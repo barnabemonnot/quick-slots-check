@@ -1,0 +1,9 @@
+{
+  "candidate": "ref.py:evaluate",
+  "scenarios": 4,
+  "slot_cases": 40,
+  "arithmetic_checks": 408,
+  "policy_checks": 20,
+  "fixed32_negative_control_mismatches": 191,
+  "scope": "Optional reference/policy ABI extension, not a minimal client or network run"
+}
