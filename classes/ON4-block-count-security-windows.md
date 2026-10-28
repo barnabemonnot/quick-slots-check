@@ -6,7 +6,7 @@ Cause S1/S2. Worst seen: BREAKS with a HIGH mechanism (in a dormant contract, so
 wall-clock terms. This includes L2 contracts whose `block.number` is the L1 block number. A direct test of 55 L2/L3
 chains found this L1 clock on 16 active chains of one rollup family and local block numbers on 26 (CHECKED).
 
-Seen: rollup challenge periods (6.36 d -> 5.30 d), a challenge grace period with no setter, force-inclusion and
+Seen: rollup challenge and confirmation periods (each one-sixth shorter), block-counted parameters with no setter, force-inclusion and
 inactivity windows, restaking withdrawal delays (14 -> 11.67 d), a cross-chain gateway delay, a deposit-security pause
 window (300 -> 250 s). One based rollup pins its L2 blocks to 12 s L1 slots in an immutable contract, so its node,
 prover and rollup diverge from the fork. One dormant staking contract gates rewards on "due block OR due time"; at 10 s

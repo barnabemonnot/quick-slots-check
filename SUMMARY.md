@@ -91,8 +91,8 @@ CHECKED code; INFERRED timing.
   programs. An old version of one fails only during a dispute (INFERRED from CHECKED code).
 - **Staking oracle clocks onchain** (MEDIUM). Reports of three staking systems stop at a predictable time (CHECKED
   mechanism, INFERRED timing).
-- **A rollup's challenge grace period has no setter** (CHECKED mechanism). Keeping its wall-clock length needs a
-  logic upgrade.
+- **Some block-counted parameters have no setter** (CHECKED mechanism). Keeping their wall-clock length then needs a
+  logic upgrade. Check every block-counted parameter for a setter.
 
 Ratings follow [RATING.md](RATING.md). A blind re-rating by a second model family kept 37 of 46 MEDIUM+ ratings and
 proposed five one level lower. None rose. Reach is unmeasured for most MEDIUM+ notes.

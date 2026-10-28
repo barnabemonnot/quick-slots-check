@@ -13,7 +13,7 @@ depends_on: [R8]
 a placeholder; another, now closed, had 10000; the EIP's mainnet entry is 10,000 ms. No value is frozen.
 
 **Why it matters (CHECKED arithmetic).** Fixes depend on the value: a virtual genesis is `G + 64*e_F` at 10 s and
-`G + 128*e_F` at 8 s; a 45,818-block window becomes 54,982 or 68,727 blocks; per-block rates scale x5/6 or x2/3; one
+`G + 128*e_F` at 8 s; a 6 d window of 43,200 blocks becomes 51,840 or 64,800 blocks; per-block rates scale x5/6 or x2/3; one
 L2 grid of 72 s works with 8 s but not 10 s. An assumed 10 s schedule against an actual 12 s one is 1,350 epochs wrong
 after 30 d.
 

@@ -18,7 +18,7 @@ unless they are arithmetic. These are test instructions for isolated fixtures, n
 | T-ON3b | `seconds_per_slot`, checkpoint-age checks | A constant 10 from genesis. The example jumps 3.46 million slots. | The schedule for current slot and checkpoint age; test bootstrap at a realistic `F`. |
 | T-ON3c | `SECONDS_PER_SLOT`, client creation, `config/spec` | Store one API duration as a full-history clock (1,440 slots per day lost). | Store the validated schedule; test both legacy-value responses. |
 | T-ON3d | base head, `MAX_SLOT_AGE`, slot timestamp | Treat an old-base-head workaround as permanent. Proof span 5.3 sync periods after 30 d. | Install the fork-aware prover and verifier; keep the intended age rule. |
-| T-ON4a | confirm, challenge and grace periods in blocks | Change confirmation only. An unchanged 45,818-block challenge lasts 5.30 d. | Update the whole challenge configuration; replace components with immutable periods. |
+| T-ON4a | confirm, challenge and grace periods in blocks | Change confirmation only. An unchanged block-counted challenge period is one-sixth shorter (a 6.4 d period lasts about 5.3 d). | Update the whole challenge configuration; replace components with immutable periods. |
 | T-ON4b | `FORK_TIME`, `execute` | Vote a fixed date too soon. A correction can need another 34-37 d path. | Runtime parameters or a validated fork gate; rehearse a moved date. |
 | T-ON4c | `block.number`, `block.timestamp` | Change counter units without migration. Stored L1 deadlines can expire at once. | Keep the counter and rescale, or migrate every deadline. |
 | T-ON4d | withdrawal-delay constants | Raise one delay, keep its mirror. Early completion attempts revert. | Apply T-ON8b to both contracts. |
